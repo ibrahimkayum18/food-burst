@@ -8,6 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script> 
 
+    <!-- Font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Lato font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +35,183 @@
         }
     </style>
 </head>
-<body>
-    
+<body class="font-lato">
+    <header class="container lg:mx-auto ">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                      <li><a>Item 1</a></li>
+                      <li tabindex="0">
+                        <details>
+                          <summary>Parent</summary>
+                          <ul class="p-2">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                          </ul>
+                        </details>
+                      </li>
+                      <li><a>Item 3</a></li>
+                    </ul>
+                  </div>
+                <div class="navbar-center">
+                    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Item 1</a></li>
+                      <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Item 3</a></li>
+                    </ul>
+                  </div>
+                  <!-- <a class="btn btn-ghost normal-case text-xl">daisyUI</a> -->
+                </div>
+                
+                <div class="navbar-end">
+                  <input type="text" name="search" id="" placeholder="Search" >
+                </div>
+              </div>
+        </nav>
+        <div class="relative">
+            <div class="carousel w-full opacity-100 bg-gradient-to-r from-[#121212] to-[#121212]">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="hero min-h-screen" style="background-image: url(images/banner4.png);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                          <div class="max-w-md">
+                            <h1 class="text-5xl font-bold text-white mb-6">Exotic tastes at your <br> doorstep</h1>
+                            <p class="mb-8">We supply highly quality organic products</p>
+                            <button class="btn bg-pinky border-none text-white uppercase">Get Started</button>
+                          </div>
+                        </div>
+                      </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="hero min-h-screen" style="background-image: url(images/banner3.png);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                          <div class="max-w-md">
+                            <h1 class="text-5xl font-bold text-white mb-6">Exotic tastes at your <br> doorstep</h1>
+                            <p class="mb-8">We supply highly quality organic products</p>
+                            <button class="btn bg-pinky border-none text-white uppercase">Get Started</button>
+                          </div>
+                        </div>
+                      </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="hero min-h-screen" style="background-image: url(images/banner2.png);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                          <div class="max-w-md">
+                            <h1 class="text-5xl font-bold text-white mb-6">Exotic tastes at your <br> doorstep</h1>
+                            <p class="mb-8">We supply highly quality organic products</p>
+                            <button class="btn bg-pinky border-none text-white uppercase">Get Started</button>
+                          </div>
+                        </div>
+                      </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="hero min-h-screen" style="background-image: url(images/banner1.png);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                          <div class="max-w-md">
+                            <h1 class="text-5xl font-bold text-white mb-6">Exotic tastes at your <br> doorstep</h1>
+                            <p class="mb-8">We supply highly quality organic products</p>
+                            <button class="btn bg-pinky border-none text-white uppercase">Get Started</button>
+                          </div>
+                        </div>
+                      </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="flex gap-24 justify-center p-12 items-center bg-white absolute left-14 -bottom-20 rounded-lg border-none">
+                <div>
+                    <img src="./images/fruit1.png" alt="">
+                    <p>Grape</p>
+                </div>
+                <div>
+                    <img src="./images/fruit2.png" alt="">
+                    <p>Orange</p>
+                </div>
+                <div>
+                    <img src="./images/fruit3.png" alt="">
+                    <p>Mango</p>
+                </div>
+                <div>
+                    <img src="./images/fruit4.png" alt="">
+                    <p>Strawberry</p>
+                </div>
+                <div>
+                    <img src="./images/fruit5.png" alt="">
+                    <p>Dalim</p>
+                </div>
+              </div> -->
+        </div>
+    </header>
+    <main class="container lg:mx-auto mt-28">
+        <!-- Deal of the day session -->
+        <section>
+            <div class="flex gap-10 flex-col md:flex-col lg:flex-row justify-between items-center mb-10">
+                <div class="">
+                    <h3 class="text-5xl font-extrabold mb-6">Deal of the day</h3>
+                    <p class="lg:w-[590px]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class=" ">
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:15;"></span>
+                          </span>
+                          days
+                        </div> 
+                        <i class="fa-solid fa-ellipsis-vertical mt-4"></i>
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:10;"></span>
+                          </span>
+                          hours
+                        </div> 
+                        <i class="fa-solid fa-ellipsis-vertical mt-4"></i>
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:24;"></span>
+                          </span>
+                          min
+                        </div> 
+                        <i class="fa-solid fa-ellipsis-vertical mt-4"></i>
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:32;"></span>
+                          </span>
+                          sec
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
